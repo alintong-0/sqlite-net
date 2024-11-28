@@ -7,6 +7,11 @@ on:
   pull_request:
     branches:
     - master
+  workflow_dispatch:
+    inputs:
+      tag_date:
+        description: 'tag date'     
+        required: true
 
 jobs:
   build:
